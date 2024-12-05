@@ -98,13 +98,12 @@ export default function Home() {
         }
         getAlbums()
     }, [])
-
-
+    console.log(artists)
     return (
         <ScrollView style={styles.home_container}>
             <View style={styles.list}>
                 <View style={styles.list_container}>
-                <Text style={styles.title}>Artistas Maneiros</Text>
+                <Text style={styles.title}>Artistas Favoritos</Text>
                     <FlatList
                         data={artists}
                         keyExtractor={(item) => item.id}
@@ -126,6 +125,7 @@ export default function Home() {
 
                 <View style={styles.list_container}>
                 <Text style={styles.title}>Albuns Maneiros</Text>
+                
                 <FlatList
                         data={albums}
                         keyExtractor={(item) => item.id}

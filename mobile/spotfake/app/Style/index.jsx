@@ -2,269 +2,183 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   scrollview: {
-    backgroundColor: "#E31E1E",
-    width: "100%"
+    backgroundColor:  "#FFFFFF", // Fundo escuro para um visual moderno
+    width: "100%",
   },
 
   modal_scrollview: {
-    backgroundColor: "white",
+    backgroundColor:  "#FFFFFF", // Fundo diferenciado para modal
     padding: 20,
+    borderRadius: 12,
   },
 
   outer_container: {
     flex: 1,
-    backgroundColor: "#E31E1E",
+    backgroundColor: "#121212",
     alignItems: "center",
   },
 
   container: {
     flex: 1,
-    backgroundColor: "white",
-    width: 400,
-    justifyContent: "center",
-    padding: 16,
-    margin: 25,
-    alignItems: "center",
-    borderRadius: 10,
-  },
-
-  main_container: {
-    flex: 1,
-    backgroundColor: "white",
-    width: 400,
-    justifyContent: "center",
-    padding: 16,
-    margin: 25,
-    alignItems: "center",
-    borderRadius: 10,
-  },
-
-  amazing_container: {
-    backgroundColor: "white",
+    backgroundColor:  "#FFFFFF",
+    width: "90%",
     justifyContent: "center",
     padding: 20,
-    margin: 25,
+    margin: 15,
     alignItems: "center",
-    borderRadius: 10,
-  },
-
-  profile_container: {
-    padding: 80,
-    backgroundColor: "white",
-    width: 400,
-    borderRadius: 10,
-  },
-
-  modal_container: {
-    flex: 1,
-    alignSelf: 'center',
-    justifyContent: "center",
-    alignItems: "center",
+    borderRadius: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.4,
+    shadowRadius: 6,
+    elevation: 10, // Para Android
   },
 
   title: {
-    fontSize: 24,
-    marginBottom: 16,
+    fontSize: 28,
+    marginBottom: 20,
     textAlign: "center",
+    color: "#FFFFFF", // Texto branco
+    fontWeight: "700",
   },
 
   input: {
-    height: 40,
-    width: 300,
-    borderColor: "#ccc",
+    height: 50,
+    width: "90%",
+    borderColor: "#666",
     borderWidth: 1,
-    marginBottom: 12,
-    paddingHorizontal: 8,
-    color: "red",
-    borderRadius: 5,
+    marginBottom: 16,
+    paddingHorizontal: 12,
+    color: "#FFFFFF", // Texto branco no input
+    backgroundColor: "#1F1F2E", // Fundo escuro para o input
+    borderRadius: 10,
   },
 
   pressable: {
-    height: 40,
-    width: 300,
-    backgroundColor: "#E31E1E",
+    height: 50,
+    width: "90%",
+    backgroundColor: "#4CAF50", // Verde modernizado
     margin: 10,
-    borderRadius: 5,
+    borderRadius: 12,
     justifyContent: "center",
+    alignItems: "center",
   },
 
   pressable_text: {
     fontSize: 18,
-    color: "white",
-    textAlign: "center",
-    fontFamily: "DancingScript",
-    fontWeight: "bold",
-  },
-
-  black_text: {
-    fontSize: 18,
-    color: "black",
-    textAlign: "center",
-    fontFamily: "DancingScript",
-    fontWeight: "bold",
+    color: "#FFFFFF", // Texto branco no botão
+    fontWeight: "600",
   },
 
   logo: {
-    width: 250,
-    height: 250,
+    width: 150,
+    height: 150,
+    marginBottom: 20,
+    borderRadius: 75,
+    borderWidth: 3,
+    borderColor:  "#FFFFFF", // Detalhe verde
   },
 
   image: {
-    width: 200,
-    height: 200,
-    borderRadius: 100,
+    width: 120,
+    height: 120,
+    borderRadius: 60,
     alignSelf: "center",
   },
 
-  link_pressable: {
-    height: 30,
-    width: 150,
-    backgroundColor: "#E31E1E",
-    justifyContent: "center",
-    marginTop: 20,
-    borderRadius: 5,
-  },
-
-  link_text: {
-    fontSize: 20,
-    color: "white",
-    textAlign: "center",
-    fontFamily: "DancingScript",
-    fontWeight: "bold",
-  },
-
-  home_container: {
-    flex: 1,
-    flexDirection: "column",
-  },
-
-  list: {
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-around",
-  },
-
   list_container: {
-    display: "flex",
-    width: "100%",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "white",
-    padding: 40,
-    marginTop: 5,
-    marginBottom: 5,
+    width: "90%",
+    alignItems: "flex-start",
+    backgroundColor:  "#FFFFFF",
+    padding: 20,
+    marginVertical: 10,
+    borderRadius: 15,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 8,
+  },
+
+  list_text: {
+    fontSize: 18,
+    color: "#FFFFFF", // Texto branco nas listas
+    fontWeight: "500",
   },
 
   navbar: {
-    display: "flex",
-    backgroundColor: "#E31E1E",
-    alignItems: "center",
-
-  },
-
-  navbar_pressable: {
-    flex: 1,
+    backgroundColor: "#1E1E2F",
+    flexDirection: "row",
+    paddingHorizontal: 20,
     height: 60,
-    backgroundColor: "#E31E1E",
+    justifyContent: "space-between",
     alignItems: "center",
-    justifyContent: "center",
+    borderTopWidth: 1,
+    borderTopColor: "#333",
   },
 
   footer: {
-    flex: 0.15,
-    paddingTop: 10,
-    backgroundColor: '#bb2424',
-    flexDirection: 'row',
-    height: 100,
-    justifyContent: "space-around"
+    backgroundColor: "#1E1E2F",
+    flexDirection: "row",
+    height: 80,
+    justifyContent: "space-around",
+    alignItems: "center",
+    borderTopWidth: 1,
+    borderTopColor: "#333",
   },
 
   profile: {
     width: 50,
     height: 50,
-    borderWidth: 3,
-    borderColor: "white",
-    borderRadius: 100,
-    backgroundColor: "white"
-  },
-
-  artist_photo: {
-    width: 140,
-    height: 140,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    border: "solid",
-    borderColor: "#bb2424",
-    borderBottomColor: '#E31E1E'
+    borderRadius: 25,
+    backgroundColor: "#FFFFFF",
+    borderWidth: 2,
+    borderColor:  "#FFFFFF",
   },
 
   artist_button: {
-    alignItems: 'center',
-    justifyContent: 'flex-start',
+    alignItems: "center",
+    justifyContent: "center",
     width: 140,
-    height: 180,
-    backgroundColor: '#E31E1E',
-    borderRadius: 20,
+    height: 200,
+    backgroundColor: "#333",
+    borderRadius: 15,
+    overflow: "hidden",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 6,
   },
 
-  album_photo: {
-    width: 300,
-    height: 180,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    border: "solid",
-    borderColor: "#bb2424",
-    borderBottomColor: '#E31E1E'
+  artist_photo: {
+    width: "100%",
+    height: "70%",
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
   },
 
   album_button: {
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    width: 300,
-    height: 230,
-    backgroundColor: '#E31E1E',
-    borderRadius: 20
+    alignItems: "center",
+    justifyContent: "center",
+    width: "90%",
+    height: 250,
+    backgroundColor: "#333",
+    borderRadius: 20,
+    overflow: "hidden",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.4,
+    shadowRadius: 8,
+    elevation: 10,
   },
 
-  music_container: {
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 10,
-    borderBottomColor: 'black',
-    borderBottomWidth: 2
+  album_photo: {
+    width: "100%",
+    height: "70%",
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
   },
-
-  big_photo: {
-    width: 600,
-    height: 350
-  },
-
-  lil_photo: {
-    width: 40,
-    height: 40,
-    borderRadius: 40,
-    borderWidth: 1,
-    borderColor: 'white'
-  },
-
-  lil_button: {
-    flexDirection: "row",
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: 200
-  },
-
-  button_container: {
-    flexDirection: "row",
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: 300
-  }
-
-
 });
 
 export default styles;
-
-

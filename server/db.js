@@ -74,7 +74,7 @@ const Album = sequelize.define('albums', {
     coverImageUrl: {
         type: Sequelize.DataTypes.STRING,
         allowNull: true,
-    },
+    }
 });
 
 Album.belongsTo(Artista, {
