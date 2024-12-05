@@ -124,8 +124,12 @@ export default function Home() {
                 </View>
 
                 <View style={styles.list_container}>
+<<<<<<< HEAD
                 <Text style={styles.title}>Albuns Maneiros</Text>
                 
+=======
+                <Text style={styles.title}>Albuns Favoritos</Text>
+>>>>>>> 388a331fe78e8da298f7cc0be68f6e81bd0054c7
                 <FlatList
                         data={albums}
                         keyExtractor={(item) => item.id}

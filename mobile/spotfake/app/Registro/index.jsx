@@ -38,13 +38,13 @@ const TelaRegistro = () => {
 
       const message = await response.text();
       alert(message);
-      if (message === "Usuario registrado com sucesso!") {
+      if (message === "Usuario registrado!") {
         router.back()
       }
 
     } catch (error) {
       console.error("Error during signup:", error);
-      alert("Erro ao criar usuário");
+      alert("Erro quando criou usuário");
     }
   };
 

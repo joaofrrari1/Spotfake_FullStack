@@ -54,7 +54,10 @@ const TelaLogin = () => {
     <ScrollView style={styles.scrollview}>
       <View style={styles.outer_container}>
         <View style={styles.container}>
+<<<<<<< HEAD
         
+=======
+>>>>>>> 388a331fe78e8da298f7cc0be68f6e81bd0054c7
           <Text style={styles.title}>Login</Text>
           <TextInput
             style={styles.input}

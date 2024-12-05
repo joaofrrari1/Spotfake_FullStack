@@ -32,7 +32,7 @@ function MainLayout() {
                             <Image source={{ uri: foto }} style={styles.profile} />
                         </Pressable>
                         <Pressable style={styles.navbar_pressable} >
-                            <Image source={"https://cdn-icons-png.flaticon.com/512/45/45712.png"} style={styles.profile} />
+                            <Image source={"https://cdn-icons-png.flaticon.com/512/1186/1186343.png"} style={styles.profile} />
                         </Pressable>
                     </View>
                 )}

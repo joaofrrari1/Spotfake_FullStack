@@ -2,7 +2,7 @@ import bcryptjs from "bcryptjs";
 import jsonwebtoken from "jsonwebtoken";
 import { User } from '../db.js'
 
-const SignUp = async (req, res) => {
+const registro = async (req, res) => {
     const { nome, sobreNome, email, senha, dataNascimento } = req.body
     if (!nome || !sobreNome || !email || !senha || !dataNascimento) {
         res.send('todos os campos devem ser preenchidos');
@@ -54,4 +54,4 @@ const SignIn = async (req, res) => {
     
 }
 
-export { SignUp, SignIn }
+export { registro, SignIn }
