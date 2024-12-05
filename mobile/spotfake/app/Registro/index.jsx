@@ -38,13 +38,13 @@ const TelaRegistro = () => {
 
       const message = await response.text();
       alert(message);
-      if (message === "Usuario registrado com sucesso!") {
+      if (message === "Usuario registrado!") {
         router.back()
       }
 
     } catch (error) {
       console.error("Error during signup:", error);
-      alert("Erro ao criar usuário");
+      alert("Erro quando criou usuário");
     }
   };
 
@@ -52,7 +52,6 @@ const TelaRegistro = () => {
     <ScrollView style={styles.scrollview}>
       <View style={styles.outer_container}>
         <View style={styles.container}>
-          <Image source={require("../../assets/images/intermusic_logo.png")} style={styles.logo} />
           <Text style={styles.title}>Registrar</Text>
           <TextInput
             style={styles.input}
